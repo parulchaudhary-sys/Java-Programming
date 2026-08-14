@@ -8,10 +8,10 @@ public class P01 {
             return;   // graceful exit, not System.exit(1)
         }
 
-        for(int i=0; i < arg.length ; i++){
+        for(int i=0; i < args.length ; i++){
             System.out.println("args["+i+"]= +args[i]");
         }
-        String services = args[0];
+        String service = args[0];
         int port = Integer.parseInt(args[1]); //args are ALWAYS string
         System.out.println("Pinging" + service + "on port" + port+ ".....OK");
     }
